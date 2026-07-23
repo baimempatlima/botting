@@ -9,8 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bugis: {
+          maroon: "#6B1D1D",
+          gold: "#C9A227",
+          deepgreen: "#1F4B3F",
+          cream: "#F5EEDC",
+        }
+      },
+      fontFamily: {
+        cormorant: ["var(--font-cormorant)", "serif"],
+        playfair: ["var(--font-playfair)", "serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
     },
   },
