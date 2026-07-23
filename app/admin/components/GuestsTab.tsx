@@ -45,7 +45,8 @@ export default function GuestsTab({ guests, settings, onRefresh }: Props) {
     const brideName = settings.bride_name || 'Tenri';
     const rawDate = settings.wedding_date || '2026-12-12T08:00:00+08:00';
     const displayDate = new Date(rawDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
-    const text = encodeURIComponent(`Assalamu'alaikum, Bapak/Ibu/Saudara/i *${g.name}* 🌸\n\nKami mengundang kehadiran Anda dalam pernikahan kami:\n💍 *${groomName} & ${brideName}* | ${displayDate}\n\nBuka undangan digital Anda:\n🔗 ${link}\n\nTerima kasih 🙏`);
+    const text = encodeURIComponent(`Assalamu'alaikum, Bapak/Ibu/Saudara/i *${g.name}* di tempat\n\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara Resepsi Pernikahan Kami
+:\n *${groomName} & ${brideName}* | ${displayDate}\n\nBuka undangan digital Bapak/Ibu/Saudara/i:\n ${link}\n\nMerupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.\n\nKami yang berbahagia\nKeluarga Kedua Mempelai \n\nMohon maaf perihal undangan hanya dibagikan melalui pesan ini.`);
     return `https://wa.me/${phone}?text=${text}`;
   };
 
