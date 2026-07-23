@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 // Ganti dengan domain kamu yang sebenarnya (tanpa trailing slash)
-const siteUrl = "https://bottingamirwardah.vercel.app/";
+const siteUrl = "https://bottingamirwardah.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Wedding Of",
+    title: "The Wedding Of Amir & Wardah",
     description:
       "Tanpa Mengurangi Rasa Hormat. Kami Bermaksud Mengundang Bapak/Ibu/Saudara/i, Pada Acara Pernikahan Kami",
     images: ["/images/og-cover.jpg"],
