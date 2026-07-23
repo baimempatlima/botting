@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 // Ganti dengan domain kamu yang sebenarnya (tanpa trailing slash)
-const siteUrl = "https://bottingamirwardah.vercel.app";
+const siteUrl = "https://bottingamirwardah.vercel.app/?to=";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
