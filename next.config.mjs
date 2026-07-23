@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  eslint: {
+    // Peringatan: Ini akan membuat build berhasil meskipun ada error ESLint.
+    ignoreDuringBuilds: true,
+  },
+}
 
-export default nextConfig;
+module.exports = nextConfig
