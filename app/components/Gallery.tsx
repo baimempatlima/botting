@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef, useCallback } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 
 /* ─── Safe image: hides itself on error, showing placeholder beneath ─── */
 function SafeImage({ src, alt }: { src: string; alt: string }) {
@@ -8,11 +9,12 @@ function SafeImage({ src, alt }: { src: string; alt: string }) {
   if (errored) return null;
   // eslint-disable-next-line @next/next/no-img-element
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
+      fill
       onError={() => setErrored(true)}
-      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      className="object-cover transition-transform duration-700 group-hover:scale-110"
     />
   );
 }
