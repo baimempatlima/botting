@@ -45,25 +45,6 @@ function AudioControl({ audioRef, started }: { audioRef: React.RefObject<HTMLAud
   );
 }
 
-/* ─────────── Calligraphic Ampersand ─────────── */
-function Ampersand() {
-  return (
-    <span
-      className="block font-cormorant leading-none select-none"
-      style={{
-        fontSize: 'clamp(4rem, 14vw, 9rem)',
-        color: '#C9A227',
-        fontStyle: 'italic',
-        fontWeight: 300,
-        lineHeight: 1,
-        textShadow: '0 2px 24px rgba(201,162,39,0.25)',
-      }}
-    >
-      &amp;
-    </span>
-  );
-}
-
 /* ─────────── Inner cover (needs useSearchParams) ─────────── */
 function CoverInner({ groomName, brideName, weddingDate }: { groomName: string; brideName: string; weddingDate: string }) {
   const searchParams = useSearchParams();
