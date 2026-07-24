@@ -20,7 +20,7 @@ export default function Footer({
         </p>
         <div className="pt-8 border-t border-bugis-gold/30">
           <p className="font-poppins text-xs opacity-60">
-            © 2026 The Wedding of {shortGroom} & {shortBride} by Bayu (Anri' ta). All Rights Reserved.
+            © 2026 The Wedding of {shortGroom} & {shortBride} by Bayu (Adikmu). All Rights Reserved.
           </p>
         </div>
       </div>
