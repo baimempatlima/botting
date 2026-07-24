@@ -43,7 +43,7 @@ export default function LoginPage() {
                 <circle cx="24" cy="24" r="5" fill="currentColor" opacity="0.5" />
               </svg>
               <h1 className="font-playfair text-2xl text-bugis-maroon">Admin Dashboard</h1>
-              <p className="font-poppins text-xs text-gray-400 mt-1">Andi &amp; Tenri Wedding</p>
+              <p className="font-poppins text-xs text-gray-400 mt-1">Amir &amp; Wardah</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
